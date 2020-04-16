@@ -10,10 +10,11 @@ DOUBLE_QUOTE = "\""
 class JSONMinifier():
     def __init__(self, filepath):
         self.input_path = filepath
+        self.output_path = "output.json"
 
     def minify_sequential(self):
         try:
-            with open(self.input_path, 'r') as iFile, open("output.json", 'w') as oFile:
+            with open(self.input_path, 'r') as iFile, open(self.output_path, 'w') as oFile:
                 insideQuotes = False
                 while(True):
                     c = iFile.read(1)
@@ -25,6 +26,8 @@ class JSONMinifier():
                             oFile.write(c)
                     else:
                         oFile.write(c)
+
+            print(f"JSON minified to: {self.output_path}")
         except FileNotFoundError as noFileError:
             print(noFileError)
 
