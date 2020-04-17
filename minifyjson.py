@@ -3,7 +3,8 @@ import json
 
 REMOVABLE_CHARS = {
     '\n' : "New line",
-    ' ': "Whitespace"
+    ' ': "Whitespace",
+    '\t': "Tabspace"
 }
 
 DOUBLE_QUOTE = "\""
@@ -15,13 +16,14 @@ class JSONMinifier():
     def minify_sequential(self):
         try:
             with open(self.input_path, 'r') as iFile, open(self.output_path, 'w') as oFile:
-                insideQuotes = False
+                insideDoubleQuotes = False
                 while(True):
                     c = iFile.read(1)
                     if not c:
                         break
-                    insideQuotes = c == DOUBLE_QUOTE
-                    if not insideQuotes:
+                    if c == DOUBLE_QUOTE:
+                        insideDoubleQuotes = not insideDoubleQuotes
+                    if not insideDoubleQuotes:
                         if c not in REMOVABLE_CHARS:
                             oFile.write(c)
                     else:
