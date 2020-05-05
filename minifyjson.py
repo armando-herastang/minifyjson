@@ -8,6 +8,7 @@ REMOVABLE_CHARS = {
 }
 
 DOUBLE_QUOTE = "\""
+
 class JSONMinifier():
     def __init__(self, filepath):
         self.input_path = filepath
