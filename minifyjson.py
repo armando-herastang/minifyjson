@@ -1,5 +1,4 @@
 import argparse
-import json
 
 REMOVABLE_CHARS = {
     '\n' : "New line",
