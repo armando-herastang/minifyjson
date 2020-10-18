@@ -18,4 +18,6 @@ It will create an `output.json` file on the current working directory.
 
 ## Todo
 
-- Parse and argument to specify output path
+- [ ] Parse and argument to specify output path
+- [ ] Figure out an easier way to do this
+- [ ] Implement beautify
