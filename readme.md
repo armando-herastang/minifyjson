@@ -12,9 +12,7 @@ Just run:
 python minifyjson.py path_to_file
 ```
 
-It will create an `output.json` file on the current working directory.
-
-
+It will create an `output.json` file on the current working directory. This file will contain the minify version of the input file.
 
 ## Todo
 
