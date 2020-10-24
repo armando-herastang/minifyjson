@@ -28,12 +28,9 @@ class JSONMinifier():
                             oFile.write(c)
                     else:
                         oFile.write(c)
-
             print(f"JSON minified to: {self.output_path}")
         except FileNotFoundError as noFileError:
             print(noFileError)
-
-
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser(description="Minify JSON file")
