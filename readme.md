@@ -1,6 +1,6 @@
 # minifyJSON
 
-A simple script for minifying a `JSON` file
+A simple script for minifying a `JSON` file.
 
 **Note:** Do not check if it is a valid `JSON` format. Assume it is correct and minify it.
 
