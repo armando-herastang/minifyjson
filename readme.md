@@ -18,5 +18,5 @@ It will create a `output.json` file on the current working directory. This file 
 
 - [ ] Parse and argument to specify output path
 - [ ] Figure out an easier way to do this
-- [ ] Implement beautify
+- [ ] Implement beautify using identation
 - [ ] Create a GUI using PyQT >= 5
