@@ -2,6 +2,10 @@
 
 A simple script for minifying a `JSON` file.
 
+## What is minification?
+
+Minification refers to the process of removing unnecessary or redundant data without affecting how the resource is processed by the browser - e.g. code comments and formatting, removing unused code, using shorter variable and function names, and so on.
+
 **Note:** Do not check if it is a valid `JSON` format. Assume it is correct and minify it.
 
 ## Usage
