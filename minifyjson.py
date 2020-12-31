@@ -1,4 +1,5 @@
 import argparse
+from constants import *
 
 class JSONMinifier():
     def __init__(self, filepath):
