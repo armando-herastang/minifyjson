@@ -1,12 +1,5 @@
 import argparse
-
-REMOVABLE_CHARS = {
-    '\n' : "New line",
-    ' ': "Whitespace",
-    '\t': "Tabspace"
-}
-
-DOUBLE_QUOTE = "\""
+from constants import *
 
 class JSONMinifier():
     def __init__(self, filepath):
